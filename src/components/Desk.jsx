@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../style'
 import { useNavigate } from 'react-router-dom'
 import { coffee, laptop, pic, paper, phone, desk } from '../assets'
+import { navLinks } from '../constants';
 
 const Desk = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const Desk = () => {
       {/* Laptop → GitHub */}
   <div className="relative z-10 w-full h-full">
       <a
-        href="https://github.com/zohaq11"
+        href={navLinks.find(link => link.id === "projects").path}
         target="_blank"
         rel="noopener noreferrer"
         className="absolute top-[6%] left-[1%] w-[20%] min-w-[200px] max-w-[600px] flex flex-col items-center hover-glow"
@@ -34,7 +35,7 @@ const Desk = () => {
 
       {/* Resume → PDF */}
       <a
-        href="/portfolio/Zoha_Qamar_Resume.pdf"
+        href={navLinks.find(link => link.id === "resume").path}
         target="_blank"
         rel="noopener noreferrer"
         className="absolute top-[45%] left-[70%] w-[10%] min-w-[100px] max-w-[125px] flex flex-col items-center hover-glow"
