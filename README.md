@@ -24,18 +24,3 @@ This project is a custom-built web app showcasing my work, experience, and ways 
 - **Routing:** React Router DOM
 - **Deployment:** GitHub Pages + Vite
 
----
-
-## 📂 Project Structure
-portfolio/
-├── public/
-├── src/
-│ ├── assets/ # Images and icons
-│ ├── components/ # React components (Desk, Navbar, About, Contact)
-│ ├── constants/ # navLinks and other config
-│ ├── App.jsx # Main app
-│ ├── main.jsx # Entry point
-│ ├── style.js # Tailwind custom styles
-├── index.html
-├── package.json
-├── vite.config.js
