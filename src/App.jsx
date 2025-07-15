@@ -19,7 +19,7 @@ export const App = () => (
           <Route path="/" element={<Desk />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          {/* Add more pages like <Projects /> or <Resume /> if you want too */}
+
         </Routes>
       </div>
     </div>
