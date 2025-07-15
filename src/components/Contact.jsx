@@ -8,7 +8,7 @@ const Contact = () => {
       {/* Left side: text */}
     <div className="md:w-1/2 w-full mb-8 md:mb-0">
     <h1 className="font-pixel font-bold ss:text-[72px] text-[52px] text-purple ss:leading-[100.8px] leading-[75px]">Contact</h1>
-    <p className="font-pixel text-lg text-white leading-relaxed"> always feel free to hit me up for a coffee chat💬
+    <p className="font-pixel text-lg text-white leading-relaxed"> Always feel free to hit me up for a coffee chat💬
      <br /><br />📧 qamarzoha@hotmail.com </p>
     </div>
     {/* Right side: icon/image */}
