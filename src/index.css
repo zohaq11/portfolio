@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --pink-gradient: linear-gradient(135deg, #ffc0cb, #f9b4ed);
+  --pink-card-shadow: 0px 20px 100px -10px rgba(252, 186, 211, 0.2);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Text Gradient for Pink/Tech Vibes */
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #ff9bb9 0.89%,
+    #ea9bb8 17.23%,
+    #f9b4ed 42.04%,
+    #d1a7f1 55.12%,
+    #bb8acf 71.54%,
+    #cbaacb 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Custom Gradient Backgrounds */
+.bg-pink-gradient {
+  background: var(--pink-gradient);
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Pink Pixel Art Vibes */
+.bg-desk-pink {
+  background-color: #fadadd;
+}
+
+.bg-pixel-blue {
+  background-color: #aeeeee;
+}
+
+.shadow-cute {
+  box-shadow: 0px 4px 20px rgba(252, 186, 211, 0.4);
+}
+
+.hover-glow:hover {
+  filter: drop-shadow(0 0 20px #ffc0cb) brightness(1.1);
+  transition: filter 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hover-glow:hover span,
+.hover-glow:hover .glow-text {
+  text-shadow: 0 0 8px #ffc0cb;
+}
+
+.responsive-text {
+  font-size: clamp(12px, 2.5vw, 18px);
+}
+
+.pixel-style {
+  image-rendering: pixelated;
+  /*border: 3px solid #ffc0cb;*/
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+@keyframes peel-in {
+  0% {
+    transform: rotateX(-90deg);
+    transform-origin: top right;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top right;
+    opacity: 1;
+  }
+}
+
+@keyframes peel-out {
+  0% {
+    transform: rotateX(0deg);
+    transform-origin: top right;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(-90deg);
+    transform-origin: top right;
+    opacity: 0;
+  }
+}
+
+.sticky-note-enter {
+  animation: peel-in 0.4s ease-out forwards;
+}
+
+.sticky-note-exit {
+  animation: peel-out 0.3s ease-in forwards;
+}
+
+.sticky-shadow {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
