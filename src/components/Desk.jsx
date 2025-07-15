@@ -34,7 +34,7 @@ const Desk = () => {
 
       {/* Resume → PDF */}
       <a
-        href="/Zoha_Qamar_Resume.pdf"
+        href="/portfolio/Zoha_Qamar_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="absolute top-[45%] left-[70%] w-[10%] min-w-[100px] max-w-[125px] flex flex-col items-center hover-glow"

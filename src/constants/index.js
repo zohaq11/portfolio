@@ -16,7 +16,7 @@ export const navLinks = [
   {
     id: "resume",
     title: "Resume",
-    path: "/Zoha_Qamar_Resume.pdf",
+    path: "/portfolio/Zoha_Qamar_Resume.pdf",
     type: "external",
   },
   {
