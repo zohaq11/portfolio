@@ -44,9 +44,9 @@ const Desk = () => {
         <img
           src={paper}
           alt="Resume"
-          className="pixel-style w-full "
+          className="pixel-style w-full transition-all"
         />
-        <span className="font-pixel text-white  responsive-text">Resume</span>
+        <span className="font-pixel text-white responsive-text">Resume</span>
       </a>
 
       {/* Phone → LinkedIn */}
