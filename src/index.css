@@ -110,13 +110,9 @@
 }
 
 .hover-glow:hover {
-  filter: drop-shadow(0 0 20px #ffc0cb) brightness(1.1);
+  filter: drop-shadow(0 0 3px #ffc0cb) drop-shadow(0 0 6px #ffc0cb) brightness(1.1);
+  text-shadow: 0 0 6px #ffc0cb;
   transition: filter 0.3s ease, text-shadow 0.3s ease;
-}
-
-.hover-glow:hover span,
-.hover-glow:hover .glow-text {
-  text-shadow: 0 0 8px #ffc0cb;
 }
 
 .responsive-text {

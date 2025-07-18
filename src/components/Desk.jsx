@@ -38,12 +38,13 @@ const Desk = () => {
         href={navLinks.find(link => link.id === "resume").path}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute top-[45%] left-[70%] w-[10%] min-w-[100px] max-w-[125px] flex flex-col items-center hover-glow"
+        className="absolute top-[45%] left-[70%] w-[10%] min-w-[100px] max-w-[125px] flex flex-col items-center -rotate-6 hover-glow"
       >
+        
         <img
           src={paper}
           alt="Resume"
-          className="pixel-style w-full transition-all -rotate-6"
+          className="pixel-style w-full "
         />
         <span className="font-pixel text-white  responsive-text">Resume</span>
       </a>
@@ -53,12 +54,12 @@ const Desk = () => {
         href="https://www.linkedin.com/in/zoha-qamar/"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute top-[45%] left-[40%] w-[10%] min-w-[100px] max-w-[200px] flex flex-col items-center hover-glow"
+        className="absolute top-[45%] left-[40%] w-[10%] min-w-[100px] max-w-[200px] flex flex-col items-center rotate-12 hover-glow"
       >
         <img
           src={phone}
           alt="LinkedIn"
-          className="pixel-style w-full transition-all rotate-12"
+          className="pixel-style w-full transition-all"
         />
         <span className="font-pixel text-white  responsive-text">LinkedIn</span>
 
@@ -67,12 +68,12 @@ const Desk = () => {
       {/* Pic → About */}
       <div
         onClick={() => navigate('/about')}
-        className="absolute top-[55%] left-[20%] cursor-pointer w-[10%] min-w-[65px] max-w-[100px] flex flex-col items-center hover-glow"
+        className="absolute top-[55%] left-[20%] cursor-pointer w-[10%] min-w-[65px] max-w-[100px] flex flex-col items-center -rotate-12 hover-glow"
       >
         <img
           src={pic}
           alt="About"
-          className="pixel-style w-full transition-all -rotate-12"
+          className="pixel-style w-full transition-all"
         />
         <span className="font-pixel text-white responsive-text">About</span>
       </div>
