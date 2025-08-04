@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './style';
+import ChatBot from './components/ChatBot';
 
 import {About, Contact, Navbar, Projects, Resume, Desk} from './components/';
 import { Routes, Route } from 'react-router-dom';
@@ -23,13 +24,14 @@ export const App = () => (
         </Routes>
       </div>
     </div>
-
-    
+    <ChatBot />
+    <footer className="w-full text-center py-4">
+      <p className=" text-white text-sm">
+        © {new Date().getFullYear()} Zoha Qamar. All rights reserved.
+      </p>
+    </footer>
   </div>
 
-  
-
 );
-
 
 export default App
