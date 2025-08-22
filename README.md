@@ -14,8 +14,8 @@ This project is a custom-built web app showcasing my work, experience, and ways 
 - **Pixel Art Design:** Icons are custom designed and match the color scheme.
 - **Responsive Layout:** Works on desktops and adjusts on smaller screens.
 - **React Router:** Client-side navigation for About and Contact pages.
-- **AI Chatbot:** Integrated OpenAI-powered chatbot (“ZohaBot”) to answer questions about my background, skills, and experience using a custom Express backend on Render.
-- **Fully deployed:** Hosted via GitHub Pages.
+- **AI Chatbot:** Integrated OpenAI-powered chatbot (“ZohaBot”) to answer questions about my background, skills, and experience using a custom backend on Vercel.
+- **Fully deployed:** Hosted via **GitHub Pages** and backend powered by **Vercel** serverless functions.
 
 ---
 
@@ -23,5 +23,5 @@ This project is a custom-built web app showcasing my work, experience, and ways 
 
 - **Frontend:** React, Tailwind CSS
 - **Routing:** React Router DOM
-- **Backend (Chatbot):** Node.js, Express, OpenAI API (via Render)
-- **Deployment:** GitHub Pages (frontend) + Render (backend)
+- **Backend (Chatbot):** Node.js serverless functions + OpenAI API (via Vercel)
+- **Deployment:** GitHub Pages (frontend) + Vercel (backend)
