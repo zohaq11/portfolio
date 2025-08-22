@@ -28,19 +28,23 @@ const ChatBot = () => {
 
     try {
       const response = await axios.post(
-        '/api/chat',
+        'https://zoha-chatbot-server.vercel.app/api/chat',
         {
           model: 'gpt-3.5-turbo',
           messages: [
             { 
               role: 'system', 
-              content: `You are Zoha’s personal assistant chatbot. Keep responses concise and friendly. Use the following info: ${JSON.stringify(zohaInfo)} Answer questions ONLY about Zoha. If asked unrelated questions, politely decline.` 
+              content: `You are Zoha’s personal assistant chatbot. Keep responses concise and friendly. Use the following info: ${JSON.stringify(zohaInfo)} ONLY Answer questions about Zoha. If asked unrelated questions, politely decline.` 
             },
             { role: 'user', content: input }
           ],
-          max_tokens: 300, // Limit response length to control costs
+          max_tokens: 500, // Limit response length to control costs
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
         }
-        
       );
 
       const botReply = response.data.choices[0].message.content;
