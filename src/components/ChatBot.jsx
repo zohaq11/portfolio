@@ -28,8 +28,7 @@ const ChatBot = () => {
 
     try {
       const response = await axios.post(
-        'https://zoha-chatbot-server.onrender.com' // Render URL
-,
+        '/api/chat',
         {
           model: 'gpt-3.5-turbo',
           messages: [
@@ -39,14 +38,9 @@ const ChatBot = () => {
             },
             { role: 'user', content: input }
           ],
-          max_tokens: 500, // Limit response length to control costs
-        },
-        {
-          headers: {
-            'Authorization': `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
-            'Content-Type': 'application/json',
-          }
+          max_tokens: 300, // Limit response length to control costs
         }
+        
       );
 
       const botReply = response.data.choices[0].message.content;
