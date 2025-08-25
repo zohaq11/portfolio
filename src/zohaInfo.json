@@ -7,6 +7,7 @@
   "veteran status": "not a veteran",
   "gender": "female",
   "pronouns": "she/her",
+  "birthdate": "11 November 2002",
   "contact": ["qamarzoha@hotmail.com", "https://www.linkedin.com/in/zoha-qamar/"],
   "education": [
     "University of Toronto", "2020-2025",
@@ -18,7 +19,7 @@
     "Director of Social Media for Women in Science and Computing (WiSC) at UTM", "July 2022 - April 2023", "Increased social media engagement by 30% through a strategic content calendar for platforms including Instagram, LinkedIn, and Discord",  "Collaborated with the marketing team to maintain brand consistency and crafted a robust community engagement strategy", "Streamlined communications by integrating inquiries via multiple platforms into a centralized response system, cutting response time by 50%"],
   
   "projects": [
-    "Personal Portfolio Website with AI Chatbot (React, Tailwind CSS, React Router, GitHub Pages, Vercel, OpenAI API) an Interactive, responsive website with a custom (all self drawn) pixel-art desk UI linking to GitHub, LinkedIn, resume pdf, and custom pages, showcasing frontend development, routing, responsive design, and deployment, Integrated an AI-powered chatbot using the OpenAI API and a Node.js/Express backend hosted on Vercel to answer questions about my background and skills", "Three Musketeers (Java, JavaFX, JUnit testing), a GUI board game using the MVC software design pattern and core OOP principles: abstraction, encapsulation, inheritance, and polymorphism",
+    "Personal Portfolio Website with AI Chatbot (React, Tailwind CSS, React Router, GitHub Pages, Vercel, OpenAI API) an Interactive, responsive website with a custom (all self drawn) pixel-art desk UI linking to GitHub, LinkedIn, resume pdf, and custom pages, showcasing frontend development, routing, responsive design, and deployment. Integrated an AI-powered chatbot using the OpenAI API and a Node.js/Express backend hosted on Vercel to answer questions about my background and skills", "k-Nearest Neighbors MNIST Classifier (Python, NumPy, Matplotlib, Pillow) Implemented a k-NN classifier for a MNIST subset, including data loading, image vectorization, distance computation, prediction, data normalization and accuracy evaluation. Visualized validation and test accuracies using Matplotlib plots to select optimal hyperparameters and improve model performance","Three Musketeers (Java, JavaFX, JUnit testing), a GUI board game using the MVC software design pattern and core OOP principles: abstraction, encapsulation, inheritance, and polymorphism",
     "Onitama (Python, Pygame, Pytest), an Interactive GUI board game with user-controlled avatars, implementing abstract data types and OOP concepts",
     "Meepo is You (Python, Pygame,  Pytest), a User-controlled GUI game using Object-Oriented programming, abstract data types, encapsulation, recursion",
     "Hangman (Python), Word guessing game",
