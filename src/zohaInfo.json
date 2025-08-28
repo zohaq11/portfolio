@@ -2,7 +2,7 @@
   "name": "Zoha Qamar",
   "title": "HBSc Computer Science & Statistics New Graduate",
   "currently seeking opportunities":["new grad software positions that enable utilization and expansion of technical skill set"],
-  "location": "Milton, Ontario (commutable distance from Toronto)",
+  "location": "Milton, Ontario, Canada (commutable distance from Toronto)",
   "work in the United States": "willing to relocate but requires H-1B visa",
   "veteran status": "not a veteran",
   "gender": "female",
@@ -11,7 +11,7 @@
   "contact": ["qamarzoha@hotmail.com", "https://www.linkedin.com/in/zoha-qamar/"],
   "education": [
     "University of Toronto", "2020-2025",
-    "Honours Bachelor of Science", "Computer Science & Statistics"
+    "Honours Bachelor of Science (HBSc)", "Computer Science & Statistics"
   ],
   "courses": ["Software Design", "Theory of Computation", "Data Structures and Analysis", "Artificial Intelligence", "Machine Learning", "Databases", "Probability and Statistics II", "Methods of Data Analysis", "Web Culture and Design", "Human-Computer Interaction and Communication", "Fundamentals of User Interface", "Immersive Environment Design", "UX Design - Prototyping and Evaluation"],
   "internship experience": ["Application Programmer Intern at the Ministry of Education in Toronto", "May 2023 - August 2024", "Developed and tested applications in an Agile development environment, debugging and troubleshooting to ensure reliability and functionality", "Automated accessibility compliance testing by integrating tools like WAVE, JAWS, and NVDA, ensuring adherence to WCAG 2.0 guidelines", "Authored 10+ detailed technical documents for workflows and testing protocols, streamlining onboarding and improving knowledge transfer", "Logged and tracked 40+ defects using ALM software, collaborating with developers to resolve 95% of issues pre-deployment and reducing defect resolution time"],
@@ -19,7 +19,9 @@
     "Director of Social Media for Women in Science and Computing (WiSC) at UTM", "July 2022 - April 2023", "Increased social media engagement by 30% through a strategic content calendar for platforms including Instagram, LinkedIn, and Discord",  "Collaborated with the marketing team to maintain brand consistency and crafted a robust community engagement strategy", "Streamlined communications by integrating inquiries via multiple platforms into a centralized response system, cutting response time by 50%"],
   
   "projects": [
-    "Personal Portfolio Website with AI Chatbot (React, Tailwind CSS, React Router, GitHub Pages, Vercel, OpenAI API) an Interactive, responsive website with a custom (all self drawn) pixel-art desk UI linking to GitHub, LinkedIn, resume pdf, and custom pages, showcasing frontend development, routing, responsive design, and deployment. Integrated an AI-powered chatbot using the OpenAI API and a Node.js/Express backend hosted on Vercel to answer questions about my background and skills", "k-Nearest Neighbors MNIST Classifier (Python, NumPy, Matplotlib, Pillow) Implemented a k-NN classifier for a MNIST subset, including data loading, image vectorization, distance computation, prediction, data normalization and accuracy evaluation. Visualized validation and test accuracies using Matplotlib plots to select optimal hyperparameters and improve model performance","Three Musketeers (Java, JavaFX, JUnit testing), a GUI board game using the MVC software design pattern and core OOP principles: abstraction, encapsulation, inheritance, and polymorphism",
+    "Personal Portfolio Website with AI Chatbot (React, Tailwind CSS, React Router, GitHub Pages, Vercel, OpenAI API) an Interactive, responsive website with a custom (all self drawn) pixel-art desk UI linking to GitHub, LinkedIn, resume pdf, and custom pages, showcasing frontend development, routing, responsive design, and deployment. Integrated an AI-powered chatbot using the OpenAI API and a Node.js/Express backend hosted on Vercel to answer questions about my background and skills", 
+    "k-Nearest Neighbors MNIST Classifier (Python, NumPy, Matplotlib, Pillow) Implemented a k-NN classifier for a MNIST subset, including data loading, image vectorization, distance computation, prediction, data normalization and accuracy evaluation. Visualized validation and test accuracies using Matplotlib plots to select optimal hyperparameters and improve model performance","Three Musketeers (Java, JavaFX, JUnit testing), a GUI board game using the MVC software design pattern and core OOP principles: abstraction, encapsulation, inheritance, and polymorphism",
+    "Heart Disease Prediction using Decision Trees (NHANES Dataset) (Python, Scikit-learn, Pandas, Matplotlib) Built and tuned Decision Tree models on the NHANES dataset, demonstrating trade-offs between underfitting,overfitting, and generalization, Conducted Exploratory Data Analysis (EDA) and feature engineering, improving model interpretability and performance through optimized hyperparameters",
     "Onitama (Python, Pygame, Pytest), an Interactive GUI board game with user-controlled avatars, implementing abstract data types and OOP concepts",
     "Meepo is You (Python, Pygame,  Pytest), a User-controlled GUI game using Object-Oriented programming, abstract data types, encapsulation, recursion",
     "Hangman (Python), Word guessing game",
@@ -28,14 +30,14 @@
   "technical skills/languages": [
     "Python", "Java", "C", "R", "Bash", "Shell", "SQL", "PostgreSQL", "VBScript", "JavaScript"],
   "web and UI": ["HTML", "CSS", "UI/UX Design", "Adobe XD", "Figma", "React"],
-  "frameworks and libraries": ["JavaFX", "Pytest", "JUnit", "NumPy", "Pandas", "Matplotlib", "PyTorch", "RESTful APIs"],
+  "frameworks and libraries": ["Pytest", "JUnit", "JavaFX", "NumPy", "Pandas", "Matplotlib", "Scikit-learn", "RESTful APIs"],
   "dev tools": ["Git", "GitHub", "VS Code", "PyCharm", "Eclipse", "Jira", "ALM", "Linux"],
   "strongest or preferred language": "Python",
   "interests": ["Software Development", "Machine Learning", "Artificial Intelligence", "Data Science"],
   "hobbies": ["weightlifting at the gym", "hiking", "reading", "playing video games"],
   "personality": "Friendly, curious, enjoys problem-solving and technology, always eager to learn more",
   "fun fact": "Loves building Lego and has a little Lego botanical collection",
-  "music": "Taylor Swift and The Weeknd are definitely some favorites and actually attended both of their concerts!",
+  "music": "Taylor Swift and The Weeknd are definitely some favorites and actually recently attended both of their concerts!",
   "movie": "The new Superman movie is a recent favorite",
   "color": "Light pink is a favorite if it wasn't already obvious by this website",
   "food": "pizza"

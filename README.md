@@ -6,8 +6,6 @@ This project is a custom-built web app showcasing my work, experience, and ways 
 ## 🚀 Live Demo
 👉 [Visit my portfolio](https://zohaq11.github.io/portfolio) 
 
----
-
 ## ✨ Features
 
 - **Desk Interface:** Clickable desk items link to my GitHub, LinkedIn, Resume, and site pages.
@@ -16,8 +14,6 @@ This project is a custom-built web app showcasing my work, experience, and ways 
 - **React Router:** Client-side navigation for About and Contact pages.
 - **AI Chatbot:** Integrated OpenAI-powered chatbot (“ZohaBot”) to answer questions about my background, skills, and experience using a serverless backend deployed on Vercel.
 - **Fully deployed:** Hosted via **GitHub Pages** and backend powered by **Vercel** serverless functions.
-
----
 
 ## 🛠️ Tech Stack
 
