@@ -5,7 +5,7 @@ import zohaInfo from '../zohaInfo.json';
 const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { sender: 'bot', text: "Hi! 👋 I'm ZohaBot — ask me anything about Zoha!" }
+    { sender: 'bot', text: "Hi! 👋 I'm ZohaBot. Ask me anything about Zoha!" }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -118,7 +118,7 @@ const ChatBot = () => {
               onKeyDown={(e) => e.key === 'Enter' && handleSend()}
               placeholder="Ask me anything..."
               disabled={isLoading}
-            />
+            /> 
             <button
               className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 disabled:opacity-50"
               onClick={handleSend}

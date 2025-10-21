@@ -15,12 +15,10 @@ export const App = () => (
 
     <div className={`bg-pink-gradient ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-       
         <Routes>
           <Route path="/" element={<Desk />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-
         </Routes>
       </div>
     </div>

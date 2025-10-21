@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="md:w-1/2 w-full mb-8 md:mb-0">
     <h1 className="font-pixel font-bold ss:text-[72px] text-[52px] text-purple ss:leading-[100.8px] leading-[75px]">Contact</h1>
     <p className="font-pixel text-lg text-white leading-relaxed"> Always feel free to hit me up for a coffee chat💬
-     <br /><br />📧<a href="mailto:qamarzoha@hotmail.com" className="hover-glow">qamarzoha@hotmail.com</a> </p>
+     <br/><br />📧<a href="mailto:qamarzoha@hotmail.com" className="hover-glow">qamarzoha@hotmail.com</a> </p>
     </div>
  
           <div className="md:w-1/2 w-full flex justify-center">

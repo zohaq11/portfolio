@@ -1,7 +1,7 @@
-# Zoha Qamar — Personal Portfolio Website
+# Zoha Qamar: Personal Portfolio Website
 
 Welcome to my interactive personal portfolio!  
-This project is a custom-built web app showcasing my work, experience, and ways to connect with me — all presented on a pixel-art style **virtual desk**👾
+This project is a custom-built web app showcasing my work, experience, and ways to connect with me, all presented on a pixel-art style **virtual desk**👾
 
 ## 🚀 Live Demo
 👉 [Visit my portfolio](https://zohaq11.github.io/portfolio) 
