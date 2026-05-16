@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
-import zohaInfo from '../zohaInfo.json';
 
 const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false);
