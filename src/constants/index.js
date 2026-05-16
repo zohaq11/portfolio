@@ -14,7 +14,7 @@ export const navLinks = [
   {
     id: "resume",
     title: "Resume",
-    path: "/portfolio/Zoha_Qamar_Resume.pdf",
+    path: import.meta.env.VITE_RESUME_URL,
     type: "external",
   },
   {

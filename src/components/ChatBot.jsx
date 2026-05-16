@@ -21,6 +21,8 @@ const ChatBot = () => {
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
+    const userText = input;
+
     const userMessage = { sender: 'user', text: input };
     setMessages(prev => [...prev, userMessage]);
     setInput('');
@@ -28,32 +30,24 @@ const ChatBot = () => {
 
     try {
       const response = await axios.post(
-        'https://zoha-chatbot-server.vercel.app/api/chat',
+        `${import.meta.env.VITE_API_URL}/api/chat`,
         {
-          model: 'gpt-3.5-turbo',
+          model: 'gpt-4o-mini',
           messages: [
-            { 
-              role: 'system', 
-              content: `You are Zoha’s personal assistant chatbot. Keep responses concise and friendly. Use the following info: ${JSON.stringify(zohaInfo)} ONLY Answer questions about Zoha. If asked unrelated questions, politely decline.` 
-            },
-            { role: 'user', content: input }
+            { role: 'user', content: userText }
           ],
-          max_tokens: 500, // Limit response length to control costs
-        },
-        {
-          headers: {
-            'Content-Type': 'application/json'
-          }
+          max_tokens: 500,
         }
       );
 
       const botReply = response.data.choices[0].message.content;
+
       setMessages(prev => [...prev, { sender: 'bot', text: botReply }]);
-    } catch (error) {
-      console.error('API Error:', error);
-      setMessages(prev => [...prev, { 
-        sender: 'bot', 
-        text: "Sorry, I couldn’t process that. Please try again!" 
+    } catch (err) {
+      console.error(err);
+      setMessages(prev => [...prev, {
+        sender: 'bot',
+        text: "Sorry, I couldn’t process that."
       }]);
     } finally {
       setIsLoading(false);
