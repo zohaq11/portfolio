@@ -6,6 +6,8 @@ const ChatBot = () => {
   const [messages, setMessages] = useState([
     { sender: 'bot', text: "Hi! 👋 I'm ZohaBot. Ask me anything about Zoha!" }
   ]);
+  const [conversationHistory, setConversationHistory] = useState([]);
+  
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
@@ -20,30 +22,41 @@ const ChatBot = () => {
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
 
-    const userText = input;
+    const userText = input.trim();
 
-    const userMessage = { sender: 'user', text: input };
-    setMessages(prev => [...prev, userMessage]);
+    setMessages(prev => [
+      ...prev,
+      { sender: 'user', text: userText }
+    ]);
     setInput('');
     setIsLoading(true);
+
+    const updatedHistory = [
+      ...conversationHistory,
+      { role: 'user', content: userText }
+    ];
 
     try {
       const response = await axios.post(
         `${import.meta.env.VITE_API_URL}/api/chat`,
         {
-          model: 'gpt-4o-mini',
-          messages: [
-            { role: 'user', content: userText }
-          ],
-          max_tokens: 500,
+          messages: updatedHistory
         }
       );
 
       const botReply = response.data.choices[0].message.content;
 
-      setMessages(prev => [...prev, { sender: 'bot', text: botReply }]);
+      setConversationHistory([
+        ...updatedHistory,
+        { role: 'assistant', content: botReply }
+      ]);
+
+      setMessages(prev => [
+        ...prev,
+        { sender: 'bot', text: botReply }
+      ]);
     } catch (err) {
-      console.error(err);
+      console.error('Chat API error:', err);
       setMessages(prev => [...prev, {
         sender: 'bot',
         text: "Sorry, I couldn’t process that."
