@@ -148,6 +148,12 @@
   filter: blur(750px);
 }
 
+.desk-scene {
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
 @keyframes peel-in {
   0% {
     transform: rotateX(-90deg);

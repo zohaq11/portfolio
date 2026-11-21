@@ -207,7 +207,7 @@ const equippedItems = [
     id: "tnt",
     title: "Blast Explosives",
     category: "Other",
-    description: "To set off and watch blasts at the mine. Not for personal use.",
+    description: "Set off and watch blasts at the mine. Not for personal use.",
     row: 3,
     column: 1
   },

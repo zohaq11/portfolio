@@ -71,7 +71,7 @@ const ChatBot = () => {
     <>
       {/* Floating Chat Icon */}
       <button
-        className="fixed bottom-6 right-6 bg-pink-500 text-white rounded-full p-4 shadow-lg hover:bg-pink-600 transition-colors"
+        className="fixed bottom-6 right-6 z-[100] bg-pink-500 text-white rounded-full p-4 shadow-lg hover:bg-pink-600 transition-colors"
         onClick={handleToggle}
         aria-label="Toggle chat"
       >
@@ -80,7 +80,7 @@ const ChatBot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-20 right-6 w-80 h-[400px] bg-white rounded-lg shadow-lg flex flex-col border border-gray-200">
+        <div className="fixed bottom-20 right-6 z-[100] w-80 h-[400px] bg-white rounded-lg shadow-lg flex flex-col border border-gray-200">
           {/* Header */}
           <div className="p-4 border-b bg-pink-500 text-white font-bold flex justify-between items-center">
             <span>ZohaBot 🤖</span>
