@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <Link to="/" className="font-pixel text-3xl text-white">
+      <Link to="/" className="font-pixel2 text-4xl text-white">
         Zoha Qamar
       </Link>
 

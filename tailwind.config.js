@@ -25,6 +25,7 @@ module.exports = {
       },
       fontFamily: {
         pixel: ["Pixelify Sans", "cursive"],
+        pixel2: ["VT323", "monospace"],
         cute: ["Caveat", "cursive"],
         poppins: ["Poppins", "sans-serif"],
       },

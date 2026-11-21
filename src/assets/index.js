@@ -6,6 +6,8 @@ import paper from "./paper.png";
 import pic from "./pic.png";
 import phone from "./phone.png";
 import desk from "./desk.png";
+import minecraft from "./minecraft/minecraft.png";
+import inventory from "./minecraft/inventory.png";
 
 
 
@@ -18,4 +20,6 @@ export {
   pic,
   phone,
   desk,
+  minecraft,
+  inventory,
 };

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pixelify+Sans:wght@400..700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -187,3 +188,98 @@
   transform-style: preserve-3d;
   perspective: 800px;
 }
+
+
+/* Minecraft inventory overlay */
+.minecraft-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 16px;
+  cursor: default;
+}
+
+/* Maintain original artwork proportions */
+.minecraft-window {
+  position: relative;
+  width: min(92vw,700px,calc(88vh * 175 / 165));
+  aspect-ratio: 175 / 165;
+  flex-shrink: 0;
+}
+
+/* Background artwork */
+.minecraft-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  image-rendering: pixelated;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Invisible interactive regions */
+.inventory-hitbox {
+  position: absolute;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Visible focus indicator for keyboard users */
+.inventory-hitbox:focus-visible {
+  outline: 2px dashed white;
+  outline-offset: 1px;
+}
+
+/* Minecraft-inspired tooltip */
+
+.minecraft-tooltip {
+  position: fixed;
+  z-index: 1100;
+
+  width: max-content;
+  max-width: min(265px, calc(100vw - 24px));
+  max-height: calc(100vh - 24px);
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  padding: 8px 10px;
+  background: rgba(16, 0, 16, 0.96);
+  border: 2px solid #aaaaaa;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
+
+  pointer-events: none;
+
+  font-family: 'VT323', monospace;
+  image-rendering: pixelated;
+  overflow-wrap: anywhere;
+}
+
+.minecraft-tooltip-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+
+.minecraft-tooltip-category {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.minecraft-tooltip-description {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+

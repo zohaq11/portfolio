@@ -11,7 +11,7 @@ const About = () => {
           About Me
         </h1>
 
-        <p className="font-pixel text-lg text-white leading-relaxed"> 
+        <p className="font-pixel2 text-xl text-white leading-relaxed"> 
           Hi! I'm a HBSc CS+Stats 2025 graduate from UofT and this is my portfolio website😁
           <br/><br/> 
           Since a portfolio is supposed to showcase my work, I figured what better way than digitalizing where the magic happens🪄 - my desk!
